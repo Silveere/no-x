@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         =w=
+// @name         =w= with favicon
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  =w= to replace x
+// @description  =w= icon to replace x
 // @author       You
 // @match        https://*.twitter.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=twitter.com
@@ -36,7 +36,7 @@
 
         canvas.width=16;
         canvas.height=16;
-        ctx=canvas.getContext('2d');
+        let ctx=canvas.getContext('2d');
         // black background
         ctx.fillStyle="black";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -56,7 +56,7 @@
     function updateFavicon(face) {
         let favicon=document.querySelector('link[rel~=icon]');
         if (!favicon) {
-            favicon=document.createElement(link);
+            favicon=document.createElement("link");
             favicon.rel='icon shortcut';
             document.head.appendChild(favicon);
         }
@@ -96,7 +96,7 @@
                     for (const addedNode of mutation.addedNodes) {
                         if (addedNode.nodeType === Node.ELEMENT_NODE && ['A', 'LINK'].includes(addedNode.tagName)) {
                             let anchor = addedNode;
-                            if ((anchor.getAttribute('aria-label') === 'Twitter' && anchor.getAttribute('href') === '/home') || anchor.getAttribute(rel).includes('icon')){
+                            if ((anchor.getAttribute('aria-label') === 'Twitter' && anchor.getAttribute('href') === '/home') || anchor.getAttribute("rel").includes('icon')){
                                 setFace();
                             }
                         }
@@ -115,4 +115,3 @@
     // Set an interval to update the face periodically
     setInterval(setFace, intervalTime);
 })();
-
