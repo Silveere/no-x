@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         =w= with favicon
-// @namespace    http://tampermonkey.net/
+// @namespace    https://gist.github.com/Silveere/091f7839397579fbce243a9d61b96297
 // @version      0.1
 // @description  =w= icon to replace x
+// @author       qatoqat, NullBite
 // @author       You
 // @match        https://*.twitter.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=twitter.com
