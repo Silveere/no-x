@@ -6,6 +6,7 @@
 // @author       qatoqat, NullBite
 // @author       You
 // @match        https://*.twitter.com/*
+// @match        https://*.x.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=twitter.com
 // @grant        none
 // @license      MIT
