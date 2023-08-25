@@ -10,7 +10,7 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=twitter.com
 // @grant        none
 // @license      MIT
-// @run-at       document-start
+// @run-at       document-idle
 
 // ==/UserScript==
 
