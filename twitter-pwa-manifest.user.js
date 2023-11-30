@@ -3,6 +3,8 @@
 // @namespace   https://github.com/Silveere/no-x
 // @match       https://*.twitter.com/*
 // @match       https://*.x.com/*
+// @downloadURL https://github.com/Silveere/no-x/raw/main/twitter-pwa-manifest.user.js
+// @updateURL   https://github.com/Silveere/no-x/raw/main/twitter-pwa-manifest.user.js
 // @grant       none
 // @version     1.0
 // @author      NullBite
